@@ -38,7 +38,7 @@ type Gauge interface {
 	Value() int64
 }
 
-// Host represents metric host interace
+// Host represents metric host interface
 type Host interface {
 	Start() error
 	Stop() error

@@ -267,7 +267,7 @@ func (h *host) loggerPatchLevels(w http.ResponseWriter, r *http.Request) {
 		}
 		if _, ok := lvm[level]; !ok {
 			h.log.Event(mlog.Error, func(e mlog.Event) {
-				e.String("msg", "Requested incorect logger level")
+				e.String("msg", "Requested incorrect logger level")
 				e.String("logger", logger)
 				e.String("level", level)
 			})
